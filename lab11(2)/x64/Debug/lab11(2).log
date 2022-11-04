@@ -1,0 +1,5 @@
+﻿  Source.c
+D:\Программирование\lab11(2)\Source.c(15,36): warning C4305: +=: усечение из "double" в "float"
+D:\Программирование\lab11(2)\Source.c(13,1): warning C4305: инициализация: усечение из "double" в "float"
+D:\Программирование\lab11(2)\Source.c(38,14): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  lab11(2).vcxproj -> D:\Программирование\lab11(2)\x64\Debug\lab11(2).exe
