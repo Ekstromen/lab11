@@ -1,0 +1,27 @@
+#define _CRT_SECURE_NO_DEPRECATE
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+#define N 10
+
+int main()
+{	
+	float A[N];
+	int x, mx = 1000;
+	setlocale(LC_ALL, "rus");
+	for (int i = 0; i < N; i++)
+	{
+		printf("Введите значние A[%d] = ",i);
+		scanf("%d", &x);
+		A[i] = x;
+		if ((x < 0) && (x % 3 == 0))
+		{
+			mx = i;
+		}
+
+	}
+
+	if (mx < 0) printf("Отрицательного элемента, делящегося на 3 без остатка не существует.\n");
+	else printf("Номер последнего отрицательного элемента, делящегося на 3 без остатка = %d", mx);
+
+}
