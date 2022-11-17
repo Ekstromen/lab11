@@ -1,0 +1,42 @@
+#define _CRT_SECURE_NO_DEPRECATE
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+#include <math.h>
+#include <string.h>
+#include <ctype.h>
+#define N 30
+#define M 42
+
+int main()
+{
+	system("chcp 1251");
+	setlocale(LC_ALL, "rus");
+	char str[N];
+	char hello[M] = "Hello " ;
+	printf("Enter your name: ");
+	scanf("%s",str);
+
+	for (int i = 0; i < N; i++)
+	{
+		str[i] = toupper(str[i]);
+	}
+
+	strcat(hello,str);
+
+	for (int i = strlen(hello); i < M-2; i++)
+	{
+		hello[i] = '!';
+	}
+
+	hello[40] = '\0';
+
+	for (int i = 0; i < strlen(hello); i++)
+	{
+		printf("%c",hello[i]);
+	}
+}
+
+
+
